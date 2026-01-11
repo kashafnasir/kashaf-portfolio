@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kashaf | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: rgb(0, 0, 34);
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      background-color: rgb(9, 9, 58);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(130, 130, 231);
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* HERO SECTION */
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 100px 0;
+      flex-wrap: wrap;
+    }
+
+    .leftsection {
+      max-width: 500px;
+      font-size: 2.5rem;
+    }
+
+    .leftsection p {
+      font-size: 1rem;
+      margin-top: 15px;
+      color: #ccc;
+    }
+
+    .purple {
+      color: blueviolet;
+    }
+
+    #element {
+      color: blueviolet;
+    }
+
+    .picture {
+      width: 260px;
+      border-radius: 50%;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: blueviolet;
+      margin: 60px 80px;
+    }
+
+    /* SKILLS SECTION */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgb(20, 20, 60);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    /* PROJECTS */
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      color: #9f9fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* CONTACT */
+    #contact {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .contact-icons a {
+      font-size: 32px;
+      margin: 0 15px;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .contact-icons a:hover {
+      transform: translateY(-5px);
+      color: gray;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgb(9, 9, 58);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="left">Kashaf's Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="firstsection" id="home">
+  <div class="leftsection">
+    Hello, my name is <span class="purple">Kashaf</span>
+    <div>and I am a</div>
+    <span id="element"></span>
+    <p>
+      BSCS student passionate about web development, Python backends,
+      and data-driven applications.
+    </p>
+  </div>
+
+  <img src="./assets/Kashaf.png" alt="Kashaf" class="picture">
+</section>
+
+<hr>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">Bootstrap, Responsive Design</div>
+    <div class="card">Python, Flask, Django</div>
+    <div class="card">Databases: MySQL, PostgreSQL, SQLite</div>
+    <div class="card">EDA, Data Wrangling, Data Cleaning</div>
+    <div class="card">Git & GitHub</div>
+  </div>
+</section>
+
+<hr>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="card">
+      <h3>Diet Recommendation System</h3>
+      <p>AI-based diet & workout recommendation system using Python and Gemini Pro.</p>
+      <a href="https://github.com/kashafnasir/diet_recommendation_system" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+     <div class="card">
+      <h3>To-Do list Flask App</h3>
+      <p>A simple and functional To‑Do List application built to help users manage daily tasks efficiently.
+This project demonstrates CRUD (Create, Read, Update, Delete) operations and basic backend‑frontend interaction using Python and HTML.</p>
+      <a href=" https://github.com/kashafnasir/Todo-App.git" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Titanic Data Visualization</h3>
+      <p>Exploratory data analysis & visualization using Pandas and Matplotlib.</p>
+      <a href="https://github.com/kashafnasir/CodeAlpha_Data_visualization" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Open to internships and growth-oriented opportunities.</p>
+
+  <div class="contact-icons">
+    <a href="mailto:kashaftheanalyst@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/kashafnasir" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/kashaf-memon/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Kashaf — All Rights Reserved
+</footer>
+
+<!-- Typed JS -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  new Typed('#element', {
+    strings: ['Web Developer.', 'Python Developer.', 'Frontend Engineer.'],
+    typeSpeed: 50,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
